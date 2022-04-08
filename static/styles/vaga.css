@@ -1,0 +1,31 @@
+body {
+    background-color: darkgray;
+}
+.vaga {
+    width: 1000px;
+    margin: 30px auto;    
+    border-radius: 8px;   
+    background-color: darkgreen;
+    color: white;
+    
+}
+
+.plusbtn {
+    margin: 20px 50px 200px 320px ;
+    background-color: darkgreen;
+    border: none;
+}
+.description {
+    background-color: darkgreen;
+    border-radius: 8px;
+    margin: 5px 4px;
+    text-align: justify;
+}
+.col {      
+    height: 64px;    
+}
+.texto {
+    margin: 4px;
+}
+
+
