@@ -33,7 +33,7 @@ Dados os requisitos de projeto, a Fiv5Tech Co. elaborou insights sobre o produto
 
 ![Tecnologias Utilizadas](./readme/tecnologias-utilizadas.png "Tecnologias Utilizadas")
 
-## **Metodologia Utilizada**
+## **Metodologias Utilizadas**
 
 **SCRUM**
 
@@ -52,6 +52,18 @@ Um processo empírico é aquele onde diversos imprevistos ocorrem - diferente de
 Diferente de uma linha de montagem, onde cada passo pode ser previsto e monitorado, em projetos de desenvolvimento complexo de softwares isso se torna impossível, e daí a razão de se utilizar um processo empírico.
 
 ![Scrum](./readme/scrum.png "Scrum")
+
+**MVC - Model View Controller**
+
+MVC (Model-View-Controller) é um padrão em design de software comumente usado para implementar interfaces de usuário, dados e lógica de controle. Ele enfatiza uma separação entre a lógica de negócios do software e a exibição. Esta "separação de interesses" proporciona uma melhor divisão do trabalho e uma melhor manutenção. Alguns outros padrões de design são baseados em MVC, como MVVM (Model-View-Viewmodel), MVP (Model-View-Presenter) e MVW (Model-View-Whatever).
+
+As três partes do padrão de projeto de software MVC podem ser descritas da seguinte forma:
+
+* Modelo: Gerencia dados e lógica de negócios.
+* View: lida com layout e exibição.
+* Controlador: roteia comandos para as peças do modelo e da visualização.
+
+![MVC](./readme/mvc.png "MVC")
 
 ## **Wireframes das páginas**
 
@@ -81,7 +93,7 @@ Diferente de uma linha de montagem, onde cada passo pode ser previsto e monitora
    |---|---|
 | Leandro Aquino | Product Owner |
 | Yago Pereira | Scrum Master|
-| Eruano | Developer | 
-| Eliézer | Developer |
+| Eruano Rubens | Developer | 
+| Eliézer Lopes | Developer |
 | Thiago Bueno | Developer | 
-| Wellington | Developer |
+| Wellington Souza | Developer |
