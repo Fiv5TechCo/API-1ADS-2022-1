@@ -8,13 +8,17 @@ body {
 }
 
 .content {
-    flex: 1 0 auto;    
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;  
+    margin: 0;
+    padding: 0;
+    width: 100%;  
 }
 
 .my-navbar {
     background-color: #038c3e;
 }
-
 
 .my-footer {
     background-color: #038c3e;
@@ -25,4 +29,56 @@ footer img {
     margin:15px
 }
 
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+}
+
+#texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    background-color: #d9d5d2;
+    padding: 40px;
+}
+
+#texto h2 {
+    margin-top: 30px;
+    color: #025928;
+}
+#texto h3 {
+    margin-top: 30px;
+    color: #025928;
+}
+#texto p {
+    margin-top: 10px;
+    color: #0d0d0d;
+    font-size: large;
+}
+#texto ol {
+    margin-top: 10px;
+    color: #0d0d0d;
+    font-size: large;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    #texto {
+        width: 100%;
+    }
+
+}
 
