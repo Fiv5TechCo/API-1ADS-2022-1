@@ -56,16 +56,17 @@
   <div class="content_vagas">
 
     <!--VAGA 01-->
+    {% for indice in range(0, 10) %}    
     <div class="vaga">
       <div class="container">
         <div class="row row-cols-2">
           <div class="col">
-            <h5 class="texto">Analista TI</h5>
-            <p class="texto">São José dos Campos</p>
+            <h5 class="texto">{{ job_opportunity[indice]['subject'] }}</h5>
+            <p class="texto">{{ job_opportunity[indice]['place'] }}</p>
           </div>
           <div class="col">
-            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01"
-              aria-expanded="false" aria-controls="collapseExample">
+            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ indice }}"
+              aria-expanded="false" aria-controls="collapse{{ indice }}">
               <img src="../static/img/plus-free-icon-font.png" alt="plus" height="16px" width="16px">
             </button>
             <a href=""><img src="../static/img/share-free-icon-font.png" alt="Compartilhar" height="16px"
@@ -73,92 +74,18 @@
           </div>
         </div>
       </div>
-      <div class="collapse" id="collapse01">
+      <div class="collapse" id="collapse{{ indice }}">
         <div class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam doloremque quos, velit dolorem,
-          molestiae unde, mollitia rem voluptate odit quod consequuntur! Quis minus voluptatem reprehenderit assumenda
-          officiis? Fugit, ration.
+          <h5 class="texto">Descrição Geral</h5>
+          <p class="texto">{{ job_description[indice]['description'] }}</p>
+          <h5 class="texto">Requistos</h5>
+          <p class="texto">{{ job_description[indice]['assignment'] }}</p>
         </div>
       </div>
-    </div>
+    </div>   
 
-    <!--VAGA 02-->
-    <div class="vaga">
-      <div class="container">
-        <div class="row row-cols-2">
-          <div class="col">
-            <h5 class="texto">Analista TI</h5>
-            <p class="texto">São José dos Campos</p>
-          </div>
-          <div class="col">
-            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02"
-              aria-expanded="false" aria-controls="collapseExample">
-              <img src="../static/img/plus-free-icon-font.png" alt="plus" height="16px" width="16px">
-            </button>
-            <a href=""><img src="../static/img/share-free-icon-font.png" alt="Compartilhar" height="16px" width="16px"></a>
-          </div>
-        </div>
-      </div>
-      <div class="collapse" id="collapse02">
-        <div class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam doloremque quos, velit dolorem, molestiae
-          unde, mollitia rem voluptate odit quod consequuntur! Quis minus voluptatem reprehenderit assumenda officiis?
-          Fugit, ration.
-        </div>
-      </div>
-    </div>
-
-    <!--VAGA 03-->
-    <div class="vaga">
-      <div class="container">
-        <div class="row row-cols-2">
-          <div class="col">
-            <h5 class="texto">Analista TI</h5>
-            <p class="texto">São José dos Campos</p>
-          </div>
-          <div class="col">
-            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse04"
-              aria-expanded="false" aria-controls="collapseExample">
-              <img src="../static/img/plus-free-icon-font.png" alt="plus" height="16px" width="16px">
-            </button>
-            <a href=""><img src="../static/img/share-free-icon-font.png" alt="Compartilhar" height="16px" width="16px"></a>
-          </div>
-        </div>
-      </div>
-      <div class="collapse" id="collapse04">
-        <div class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam doloremque quos, velit dolorem, molestiae
-          unde, mollitia rem voluptate odit quod consequuntur! Quis minus voluptatem reprehenderit assumenda officiis?
-          Fugit, ration.
-        </div>
-      </div>
-    </div>
-
-    <!--VAGA 04-->
-    <div class="vaga">
-      <div class="container">
-        <div class="row row-cols-2">
-          <div class="col">
-            <h5 class="texto">Analista TI</h5>
-            <p class="texto">São José dos Campos</p>
-          </div>
-          <div class="col">
-            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse03"
-              aria-expanded="false" aria-controls="collapseExample">
-              <img src="../static/img/plus-free-icon-font.png" alt="plus" height="16px" width="16px">
-            </button>
-            <a href=""><img src="../static/img/share-free-icon-font.png" alt="Compartilhar" height="16px" width="16px"></a>
-          </div>
-        </div>
-      </div>
-      <div class="collapse" id="collapse03">
-        <div class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam doloremque quos, velit dolorem, molestiae
-          unde, mollitia rem voluptate odit quod consequuntur! Quis minus voluptatem reprehenderit assumenda officiis?
-          Fugit, ration.
-        </div>
-      </div>
-    </div>
+    {% endfor%}
+    
 
   </div>
 

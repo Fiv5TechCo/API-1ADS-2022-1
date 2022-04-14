@@ -31,10 +31,12 @@ footer img {
 
 .image {
     width: 50%;
+    
 }
 
 .image img {
     width: 100%;
+    height: 100%;
 }
 
 #texto {
