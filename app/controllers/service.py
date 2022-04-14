@@ -41,13 +41,11 @@ def get_job_desc(url):
     return dados
 
 
-def info_vaga(url_list):
-    #description = []
+def info_vaga(url_list):    
     dados_vaga = []
     urls = get_url_vaga(url_list)
     for url in urls:         
-        dados_vaga.append(get_job_info(url))
-        #description.append(get_job_desc(url))
+        dados_vaga.append(get_job_info(url))        
     key_list = ['subject', 'task', 'place', 'wage', 'company']
     info_vaga_dict = {}
     cont = 0
@@ -77,23 +75,8 @@ def description(url_list):
 
 job_opportunity= info_vaga(url_list)
 job_description = description(url_list)
+url_vagas = get_url_vaga(url_list)
 
 
 
 
-
-"""
-key_list = ['name', 'age', 'address']
-value_list = ['Johnny', '27', 'New York']
-
-dict_from_list = dict(zip(key_list, value_list))
-print(dict_from_list)
-Titulo
-Cargo
-Local
-Salário
-Empresa
-
-
-
-"""

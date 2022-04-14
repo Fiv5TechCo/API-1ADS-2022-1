@@ -1,6 +1,6 @@
 from flask import render_template
 from app import app
-from app import service
+from app.controllers import service
 
 
 @app.route("/index")
@@ -13,7 +13,9 @@ def index():
 @app.route("/vagas")
 def quemsomos():
     job_opportunity = service.job_opportunity
-    job_description = service.job_description   
-    return render_template('vagas.html', job_opportunity = job_opportunity, job_description = job_description )
+    job_description = service.job_description
+    url_vagas = service.url_vagas   
+    return render_template('vagas.html', job_opportunity = job_opportunity,
+     job_description = job_description, url_vagas = url_vagas)
 
 
