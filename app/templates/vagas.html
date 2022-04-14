@@ -55,7 +55,7 @@
   <!--CONTEÚDO DA PÁGINA-->
   <div class="content_vagas">
 
-    <!--VAGA 01-->
+    <!--VAGAS-->
     {% for indice in range(0, 10) %}    
     <div class="vaga">
       <div class="container">
@@ -66,9 +66,9 @@
           <div class="col">
             <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ indice }}"
               aria-expanded="false" aria-controls="collapse{{ indice }}">
-              <img src="../static/img/plus-free-icon-font.png" alt="plus" height="16px" width="16px">
+              <img src="../static/img/plus-free-icon-font.png" alt="Expandir" title="Expandir" height="16px" width="16px">
             </button>
-            <a href="{{ url_vagas[indice] }}"><img src="../static/img/share-free-icon-font.png" alt="Compartilhar" height="16px"
+            <a href="{{ url_vagas[indice] }}"><img src="../static/img/share.png" alt="Link da vaga" title="Link da vaga" height="16px"
                 width="16px"></a>
           </div>
         </div>
@@ -105,7 +105,7 @@
       </div>
       <div class="col-lg-4 d-flex justify-content-center align-items-center">
         <ul class="list-unstyled small" style="color: white;">
-          <li class="mb-1">&copy; 2022, Todos os direitos reservados.</li>
+          <li class="mb-1">&copy; 2022 - Todos os direitos reservados.</li>
         </ul>
       </div>
       <div class="col-lg-4 d-flex justify-content-center align-items-center">

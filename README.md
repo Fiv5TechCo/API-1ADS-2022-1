@@ -17,7 +17,7 @@ Seguem abaixo os requisitos de projeto, elencados pelo cliente:
 
 ## **Análise dos Requisitos**
 
-Dados os requisitos de projeto, a Fiv5Tech Co. elaborou insights sobre o produto ideal, que atenderia as necessidades do cliente da melhor forma. Esta análise foi validade junto ao cliente, onde constam os requisitos divididos em três categorias: "Imprescindível", "Importante" e "Seria bom ter".
+Dados os requisitos de projeto, a Fiv5Tech Co. elaborou insights sobre o produto ideal, que atenderia as necessidades do cliente da melhor forma. Esta análise foi validada junto ao cliente, onde constam os requisitos divididos em três categorias: "Imprescindível", "Importante" e "Seria bom ter".
 
 ![Analise dos Requisitos](./readme/analise-dos-requisitos.png "Analise dos Requisitos")
 
@@ -28,6 +28,11 @@ Dados os requisitos de projeto, a Fiv5Tech Co. elaborou insights sobre o produto
 ## **Backlog do Produto**
 
 ![Backlog do Produto](./readme/backlog-do-produto.png "Backlog do Produto")
+
+
+# **Burndown Chart**
+
+![Burndown Chart](./readme/burndown-chart.png "Burndown Chart")
 
 ## **Tecnologias Utilizadas**
 
@@ -86,6 +91,10 @@ As três partes do padrão de projeto de software MVC podem ser descritas da seg
 **Página de Localização**
 
 ![Localização](./readme/wf-localizacao.png "Localização")
+
+## **1ª Sprint - Entrega das páginas Home e Vagas**
+
+![Gif Home e Vagas](./readme/gif-home-vagas.gif "Gif Home e Vagas")
 
 ## **Equipe**
 

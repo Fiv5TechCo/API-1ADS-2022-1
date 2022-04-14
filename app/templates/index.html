@@ -51,34 +51,37 @@
 
   <!--CONTEÚDO DA PÁGINA-->
   <div class="content">
-    <div class="image">
-        <img src="../static/img/mulher-fundo.png" alt="" class="img-responsive">
+    <div class="coluna-esquerda">
+      <img src="{{ url_for('static', filename='img/mulher-fundo.jpg') }}" alt="" class="foto-mulher">
     </div>
-    
-    <div id="texto">
-        <h2>SEU NOVO EMPREGO AQUI! AGORA!</h2>
-        <h3>SOBRE NÓS:</h3>
-        <p>Buscamos tornar a relação entre empresas e candidatos mais ágil, justa e encantadora. Queremos um
-            mundo com mais gente realizada em seus trabalhos. A Fiv5Tech é uma startup fundada por profissionais de
-            Tecnologia, com o objetivo de transformar a maneira como são encontradas vagas de emprego no Brasil. Isso tem
-            sido possível graças a agilidade e praticidade que trazemos para através do trabalho de nossos desenvolvedores.
+
+    <div class="coluna-direita">
+      <h2>SEU NOVO EMPREGO AQUI. AGORA.</h2>
+      <h3>SOBRE NÓS</h3>
+      <div>
+        <p>Buscamos tornar a relação entre empresas e candidatos mais ágil, justa e encantadora. Queremos um mundo com
+          mais gente realizada em seus trabalhos. A Fiv5Tech é uma startup fundada por profissionais de Tecnologia,
+          com o objetivo de transformar a maneira como são encontradas vagas de emprego no Brasil. Isso tem sido
+          possível
+          graças a agilidade e praticidade que trazemos para através do trabalho de nossos desenvolvedores.
         </p>
         <p>
-            Aliando-se a um especialista de marketing e a um desenvolvedor, igualmente apaixonados por impactar
-            a vida de pessoas, começaram a construir a plataforma líder em vagas no Brasil.
+          Aliando-se a um especialista de marketing e a um desenvolvedor, igualmente apaixonados por impactar a vida de
+          pessoas, começaram a construir a plataforma líder em vagas no Brasil.
         </p>
         <p>
-            Aqui na Fiv5Tech nossos valores sustentam o sonho de cooperar para um mundo com mais gente
-            realizada. Todos os dias, eles movem cada um de nossos colaboradores a darem seu melhor. Estes são <span style="font-weight: bolder;">5 princípios</span>
-             que estão intrínsecos em cada ação que tomamos como empresa:
+          Aqui na Fiv5Tech nossos valores sustentam o sonho de cooperar para um mundo com mais gente realizada. Todos os
+          dias, eles movem cada um de nossos colaboradores a darem seu melhor. Estes são <span style="font-weight: bolder;">5 princípios</span> que estão
+          intrínsecos em cada ação que tomamos como empresa:
+        </p>
         <ol>
-            <li>Juntos somos mais fortes</li>
-            <li>Somos protagonistas</li>
-            <li>Brilhamos os olhos</li>
-            <li>Sempre buscamos o sucesso</li>
-            <li>Agregamos valor</li>
+          <li>Juntos somos mais fortes</li>
+          <li>Somos protagonistas</li>
+          <li>Brilhamos os olhos</li>
+          <li>Sempre buscamos o sucesso</li>
+          <li>Agregamos valor</li>
         </ol>
-        </p>
+      </div>
     </div>
   </div>
 
@@ -95,7 +98,7 @@
         </div>
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
           <ul class="list-unstyled small" style="color: white;">
-            <li class="mb-1">&copy; 2022, Todos os direitos reservados.</li>
+            <li class="mb-1">&copy; 2022 - Todos os direitos reservados.</li>
           </ul>
         </div>
         <div class="col-lg-4 d-flex justify-content-center align-items-center">
