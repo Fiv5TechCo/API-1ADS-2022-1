@@ -61,8 +61,7 @@
       <div class="container">
         <div class="row row-cols-2">
           <div class="col">
-            <h5 class="texto">{{ job_opportunity[indice]['subject'] }}</h5>
-            <p class="texto">{{ job_opportunity[indice]['place'] }}</p>
+            <h5 class="texto">{{ job_opportunity[indice]['subject'] }}</h5> 
           </div>
           <div class="col">
             <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ indice }}"
@@ -75,10 +74,14 @@
         </div>
       </div>
       <div class="collapse" id="collapse{{ indice }}">
-        <div class="description">
-          <h5 class="texto">Descrição Geral</h5>
+        <div class="description">          
+          <p class="texto">-{{ job_opportunity[indice]['place'] }}</p>
+          <p class="texto">-{{ job_opportunity[indice]['task'] }}</p>
+          <p class="texto">-{{ job_opportunity[indice]['wage'] }}</p>
+          <p class="texto">-{{ job_opportunity[indice]['company'] }}</p>          
+          <p class="texto">-Descrição Geral:</p>
           <p class="texto">{{ job_description[indice]['description'] }}</p>
-          <h5 class="texto">Requistos</h5>
+          <p class="texto">-Requistos:</p>
           <p class="texto">{{ job_description[indice]['assignment'] }}</p>
         </div>
       </div>
