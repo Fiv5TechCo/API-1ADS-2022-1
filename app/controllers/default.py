@@ -19,3 +19,7 @@ def quemsomos():
      job_description = job_description, url_vagas = url_vagas)
 
 
+
+@app.route("/localizacao")
+def localizacao():
+    return render_template('localizacao.html')
