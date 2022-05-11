@@ -1,6 +1,6 @@
-from flask import render_template
+from flask import render_template, request
 from app import app
-from app.controllers import service
+from app.controllers import service, createMap
 
 
 @app.route("/index")
@@ -20,6 +20,11 @@ def quemsomos():
 
 
 
-@app.route("/localizacao")
+@app.route("/localizacao", methods=["POST", "GET"])
 def localizacao():
-    return render_template('localizacao.html')
+    if request.method == 'POST':
+        coordinates = request.form["coordinates"]
+        createMap.createMap(coordinates)
+        return render_template('localizacao.html')
+    else:
+        return render_template('localizacao.html')

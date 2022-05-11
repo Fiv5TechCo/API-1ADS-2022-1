@@ -1,18 +1,38 @@
-.selectors {
-  position: absolute;
-  margin: 100px 0 0 12px;
-  padding: 12px;
-  width: 300px; 
-  background-color: white;
-  z-index: 1000;
-  border-radius: 10px;
+.filters-and-jobs {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 0px 20px white;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.filters-and-jobs form {
+  margin: 30px 10px 10px 10px;
+}
+
+.filters-and-jobs form input, button {
+  box-shadow: 2px 2px 2px rgb(184, 184, 184);
 }
 
 .map {
+  width: 75%;
+}
+
+.jobs {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  flex-wrap: wrap;
+  margin: 0px 10px 10px 10px;
+  color: white;
+  overflow-y: scroll hidden;
+}
+
+.job {
+  box-shadow: 2px 2px 2px rgb(184, 184, 184);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #038c3e;
+  padding-top: 10px;
+  text-align: justify;
+  margin-top: 10px;
 }
