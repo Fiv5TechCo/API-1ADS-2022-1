@@ -1,0 +1,96 @@
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d5d2;
+}
+
+#courses-title {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #038c3e;
+    text-shadow: #707070 1px 1px 2px;
+}
+
+#courses-title p {
+    text-align: center;
+    color: black;
+    text-shadow: none;
+}
+
+#courses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+
+#courses div {
+    border-radius: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    width: 350px;
+    margin: 15px;
+    height: 350px;
+}
+
+.titulo {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+}
+
+.imagem {
+   display: flex;
+   flex-direction: column;
+   justify-items: center;
+   align-items: center; 
+   justify-content: center;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+.imagem img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 7px;
+    min-height: 200px;
+}
+
+h4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao input {
+flex-direction: column;
+color: white;
+background-color: #038c3e;
+width: 150px;
+height: 50px;
+border: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+border-radius: 7px;
+font-size: large;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.botao input:hover {
+    background-color: rgb(9, 197, 50);
+    transition: 0.3s;
+}
