@@ -1,44 +1,44 @@
-const vagas = [
-  {
-    titulo: "Desenvolvedor Front-end",
-    descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, sapiente",
-    localizacao: "São José dos Campos / SP"
-  },
-  {
-    titulo: "Desenvolvedor Back-end",
-    descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, sapiente",
-    localizacao: "Jacareí / SP"
-  },
-  {
-    titulo: "Desenvolvedor FullStack",
-    descricao: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, sapiente",
-    localizacao: "Caçapava / SP"
-  }
-]
+let jobs = ''
+let jobsToAdd = ''
 
-function updateJobs() {
-
-  const jobs = document.querySelector("div.jobs")
-  
-  vagas.map((job) => {
-    const jobTitle = job.titulo
-    const jobDescription = job.descricao
-    const jobLocation = job.localizacao
-    
-    jobs.innerHTML += `
-        <div class="job">
-          <h5>${jobTitle}</h5>
-          <p>Descrição da vaga: ${jobDescription}</p>
-          <p class="location">Localidade: ${jobLocation}</p>
-        </div>
-    `
-  })
+async function getJobs() {
+  let data = await fetch("https://raw.githubusercontent.com/YagoPSilva/Compilado-API/main/app/models/for_Metricas.json?token=GHSAT0AAAAAABQZH6WERI5GPQUQBWTRYQCAYUA4W6A")
+  jobs = await data.json()
+  return jobs
 }
 
-updateJobs()
+async function updateJobs() {
 
-function filterLocation() {
-  const input = document.querySelector("input#searchbox").value
+    jobsToAdd = await getJobs()
+
+    const jobs = document.querySelector("div.jobs")
+    
+    jobsToAdd.map((job) => {
+
+      const jobTitle = job["task"]
+      const jobWage = job["wage"]
+      const jobLocation = job["place"]
+      
+      jobs.innerHTML += `
+      <div class="job">
+      <h5>${jobTitle}</h5>
+      <p>Salário: ${jobWage}</p>
+      <p class="location">Localidade: ${jobLocation}</p>
+      </div>
+      `
+    })
+
+    if (getCookie() == '') {
+    } else {
+      const location = document.cookie.split(";")[0].split("=")[1].toString()
+      return filterLocation(location)
+    }
+}
+
+function filterLocation(location) {
+  const searchBox = document.querySelector("input#searchbox")
+  searchBox.value = location
+  const input = location
   const filter = input.toLowerCase()
   const divJobs = document.querySelector("div.jobs")
   const divJobsItems = divJobs.getElementsByClassName('job')
@@ -51,3 +51,18 @@ function filterLocation() {
     }
   }
 }
+
+function getLocation() {
+  const input = document.querySelector("input#searchbox").value
+  document.cookie = `name=${input}`
+  const location = document.cookie.split(";")[0].split("=")[1].toString()
+  return filterLocation(location)
+}
+
+function getCookie() {
+  const cookie = document.cookie
+  return cookie
+}
+
+
+updateJobs()
