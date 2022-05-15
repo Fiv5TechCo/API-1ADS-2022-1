@@ -13,7 +13,10 @@ Seguem abaixo os requisitos de projeto, elencados pelo cliente:
 
 ![Requisitos de Projeto](./readme/requisitos-de-projeto.png "Requisitos de Projeto")
 
-**Status do projeto:** Em andamento
+**Status do projeto:**
+- 1ª Sprint - Concluída 
+- 2ª Sprint - Em andamento
+- 3ª Sprint - Em andamento
 
 ## **Análise dos Requisitos**
 
@@ -30,9 +33,13 @@ Dados os requisitos de projeto, a Fiv5Tech Co. elaborou insights sobre o produto
 ![Backlog do Produto](./readme/backlog-do-produto.png "Backlog do Produto")
 
 
-# **Burndown Chart**
+# **Burndown Chart - 1ª Sprint**
 
-![Burndown Chart](./readme/burndown-chart.png "Burndown Chart")
+![Burndown Chart 1ª Sprint](./readme/burndown-chart-1sprint.png "Burndown Chart 1ª Sprint")
+
+# **Burndown Chart - 2ª Sprint**
+
+![Burndown Chart 2ª Sprint](./readme/burndown-chart-2sprint.png "Burndown Chart 2ª Sprint")
 
 ## **Tecnologias Utilizadas**
 
@@ -95,6 +102,10 @@ As três partes do padrão de projeto de software MVC podem ser descritas da seg
 ## **1ª Sprint - Entrega das páginas Home e Vagas**
 
 ![Gif Home e Vagas](./readme/gif-home-vagas.gif "Gif Home e Vagas")
+
+## **2ª Sprint - Entrega das páginas Cursos e Certificações, Métricas e Localização**
+
+![Gif Cursos, Métricas e Localização](./readme/gif-cursos-metricas-localização.gif "Gif Cursos, Métricas e Localização")
 
 ## **Equipe**
 
