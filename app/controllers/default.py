@@ -58,6 +58,10 @@ def area_filter_page(choice_filter):
 def cursos():
     return render_template('cursos.html')
 
+@app.route("/metricas")
+def metricas():
+    return render_template('metricas.html')
+
 
 @app.route("/localizacao", methods=["POST", "GET"])
 def localizacao():
