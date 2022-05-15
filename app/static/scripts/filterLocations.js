@@ -2,7 +2,7 @@ let jobs = ''
 let jobsToAdd = ''
 
 async function getJobs() {
-  let data = await fetch("https://raw.githubusercontent.com/YagoPSilva/Compilado-API/main/app/models/for_Metricas.json?token=GHSAT0AAAAAABQZH6WERI5GPQUQBWTRYQCAYUA4W6A")
+  let data = await fetch("https://raw.githubusercontent.com/Fiv5TechCo/API-1ADS-2022-1/main/app/models/for_Metricas.json")
   jobs = await data.json()
   return jobs
 }
