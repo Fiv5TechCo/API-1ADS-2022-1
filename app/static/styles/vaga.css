@@ -1,5 +1,5 @@
 body {
-    background-color: darkgray;
+    background-color: #d9d5d2;
 }
 .vaga {
     width: 1000px;
@@ -14,6 +14,34 @@ body {
     flex: 1 0 auto;
 }
 
+.myselect {
+    width: 240px;
+
+}
+
+.courses-title {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #038c3e;
+    text-shadow: #707070 1px 1px 2px;
+}
+
+.byfilter {
+    margin: 20px 50px;
+    text-align: end;
+}
+
+#filter_btn {
+    width: 80px;
+    background-color: #038c3e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
 .plusbtn {
     margin: 20px 50px 200px 320px ;
     background-color: #038c3e;
@@ -21,7 +49,7 @@ body {
 }
 .description {
     background-color: #038c3e;
-    border-radius: 8px;
+    border-radius: 7px;
     margin: 5px 4px;
     text-align: justify;
 }
@@ -31,5 +59,4 @@ body {
 .texto {
     margin: 4px;
 }
-
 

@@ -1,4 +1,4 @@
-alembic==1.7.7
+﻿alembic==1.7.7
 autopep8==1.6.0
 beautifulsoup4==4.11.1
 branca==0.5.0
@@ -10,6 +10,7 @@ Flask==2.1.1
 Flask-Migrate==3.1.0
 Flask-Script==2.0.6
 Flask-SQLAlchemy==2.5.1
+Flask-WTF==1.0.1
 folium==0.12.1.post1
 geographiclib==1.52
 geopy==2.2.0
@@ -35,4 +36,5 @@ toml==0.10.2
 typing_extensions==4.1.1
 urllib3==1.26.9
 Werkzeug==2.1.1
+WTForms==3.0.1
 zipp==3.8.0

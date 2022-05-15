@@ -33,19 +33,19 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index">Home</a>
+            <a class="nav-link active" aria-current="page" href="../index">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="vagas">Vagas</a>
+            <a class="nav-link active" aria-current="page" href="../vagas">Vagas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Cursos e Certificações</a>
+            <a class="nav-link active" aria-current="page" href="../cursos">Cursos e Certificações</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Métricas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="localizacao">Localização</a>
+            <a class="nav-link active" aria-current="page" href="../localizacao">Localização</a>
           </li>
         </ul>
       </div>
@@ -54,43 +54,52 @@
 
   <!--CONTEÚDO DA PÁGINA-->
   <div class="content_vagas">
-
-    <!--VAGAS-->
-    {% for indice in range(0, 10) %}    
+    {% if not have_filter %}
+    <form action="" method="POST">
+      {{ form_filter.csrf_token }}
+      <div class="byfilter">
+        {{ form_filter.my_filter(class="myselect") }}
+        <button type="submit" id="filter_btn">Filtrar</button>
+      </div>
+    </form>
+    {% else %}
+    <div class="courses-title">
+      <h1>Area escolhida : {{ job_details[0].area }}</h1>
+    </div>
+    {% endif %}
+    <!--VAGA 01-->
+    {% for indice in range(0, job_details_len) %}
     <div class="vaga">
       <div class="container">
         <div class="row row-cols-2">
           <div class="col">
-            <h5 class="texto">{{ job_opportunity[indice]['subject'] }}</h5> 
+            <h5 class="texto">{{ job_details[indice].subject }}</h5>            
           </div>
           <div class="col">
-            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ indice }}"
-              aria-expanded="false" aria-controls="collapse{{ indice }}">
-              <img src="../static/img/plus-free-icon-font.png" alt="Expandir" title="Expandir" height="16px" width="16px">
+            <button class="plusbtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{indice}}"
+              aria-expanded="false" aria-controls="collapse{{indice}}">
+              <img src="../static/img/plus-free-icon-font.png" alt="plus" height="16px" width="16px">
             </button>
-            <a href="{{ url_vagas[indice] }}"><img src="../static/img/share.png" alt="Link da vaga" title="Link da vaga" height="16px"
+            <a href="{{ job_details[indice].url }}"><img src="../static/img/share.png" alt="Compartilhar" height="16px"
                 width="16px"></a>
           </div>
         </div>
       </div>
-      <div class="collapse" id="collapse{{ indice }}">
-        <div class="description">          
-          <p class="texto">-{{ job_opportunity[indice]['place'] }}</p>
-          <p class="texto">-{{ job_opportunity[indice]['task'] }}</p>
-          <p class="texto">-{{ job_opportunity[indice]['wage'] }}</p>
-          <p class="texto">-{{ job_opportunity[indice]['company'] }}</p>          
-          <p class="texto">-Descrição Geral:</p>
-          <p class="texto">{{ job_description[indice]['description'] }}</p>
-          <p class="texto">-Requistos:</p>
-          <p class="texto">{{ job_description[indice]['assignment'] }}</p>
+      <div class="collapse" id="collapse{{indice}}">
+        <div class="description">
+          <p class="texto">- Local: {{ job_details[indice].place  }}</p>
+          <p class="texto">- Cargo/Função: {{ job_details[indice].task  }}</p>
+          <p class="texto">- Salário: {{ job_details[indice].wage  }}</p>
+          <p class="texto">- Empresa: {{ job_details[indice].company  }}</p>          
+          <p class="texto">- Descrição Geral:</p>
+          <p class="texto">{{ job_details[indice].description  }}</p>
+          <p class="texto">- Requistos:</p>
+          <p class="texto">{{ job_details[indice].assignment  }}</p>
         </div>
       </div>
-    </div>   
-
-    {% endfor %}
+    </div>  
     
-
-  </div>
+  {% endfor %}
 
 <!--RODAPÉ-->
 <footer class="bd-footer py-2 my-footer">
@@ -105,7 +114,7 @@
       </div>
       <div class="col-lg-4 d-flex justify-content-center align-items-center">
         <ul class="list-unstyled small" style="color: white;">
-          <li class="mb-1">&copy; 2022 - Todos os direitos reservados.</li>
+          <li class="mb-1">&copy; 2022, Todos os direitos reservados.</li>
         </ul>
       </div>
       <div class="col-lg-4 d-flex justify-content-center align-items-center">
