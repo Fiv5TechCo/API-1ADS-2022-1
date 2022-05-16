@@ -112,8 +112,7 @@ As três partes do padrão de projeto de software MVC podem ser descritas da seg
 | Nome | Função |
    |---|---|
 | Leandro Aquino | Product Owner |
-| Yago Pereira | Scrum Master|
-| Eruano Rubens | Developer | 
+| Yago Pereira | Scrum Master| 
 | Eliézer Lopes | Developer |
 | Thiago Bueno | Developer | 
 | Wellington Souza | Developer |
