@@ -67,7 +67,10 @@ def metricas():
 def localizacao():
     if request.method == 'POST':
         coordinates = request.form["coordinates"]
-        createMap.createMap(coordinates)
-        return render_template('localizacao.html')
+        if coordinates != '':
+            createMap.createMap(coordinates)
+            return render_template('localizacao.html')
+        else:
+            return render_template('localizacao.html')
     else:
         return render_template('localizacao.html')
