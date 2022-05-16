@@ -105,7 +105,7 @@ As três partes do padrão de projeto de software MVC podem ser descritas da seg
 
 ## **2ª Sprint - Entrega das páginas Cursos e Certificações, Métricas e Localização**
 
-![Gif Cursos, Métricas e Localização](./readme/gif-cursos-metricas-localização.gif "Gif Cursos, Métricas e Localização")
+![Gif Cursos, Métricas e Localização](./readme/cursos-metricas-localização.gif "Gif Cursos, Métricas e Localização")
 
 ## **Equipe**
 
