@@ -55,7 +55,9 @@
 
     <div class="filters-and-jobs">
       <form class="d-flex" method="post">
-        <input class="form-control me-2" type="search" placeholder="Nome da cidade / UF" aria-label="Search" id="searchbox" name="coordinates">
+        <select class="form-select" aria-label="Search" id="searchbox" name="coordinates">
+          <option selected value="" name="coordinates">Selecione a cidade</option>
+        </select>
         <button class="btn btn-success" type="submit" onclick="getLocation()" id="submit-btn">Pesquisar</button>
       </form>
 

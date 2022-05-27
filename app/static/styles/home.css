@@ -1,10 +1,27 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #038c3e;
+    border-radius: 0px;
+   
 }
 
 .content {
@@ -34,7 +51,8 @@ body {
     background-color: #d9d5d2;
 }
 
-.coluna-direita h2, h3 {
+.coluna-direita h2,
+h3 {
     text-shadow: #707070 1px 1px 2px;
     color: #038c3e;
     margin: 40px;
@@ -61,7 +79,7 @@ body {
 }
 
 footer img {
-    margin:15px
+    margin: 15px
 }
 
 @media only screen and (max-width: 1000px) {
@@ -69,7 +87,8 @@ footer img {
         flex-direction: column;
     }
 
-    .coluna-direita, .coluna-esquerda {
+    .coluna-direita,
+    .coluna-esquerda {
         width: 100%;
     }
 }

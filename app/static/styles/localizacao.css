@@ -11,8 +11,12 @@
   margin: 30px 10px 10px 10px;
 }
 
-.filters-and-jobs form input, button {
+.filters-and-jobs form select, button {
   box-shadow: 2px 2px 2px rgb(184, 184, 184);
+}
+
+#submit-btn {
+  margin-left: 10px;
 }
 
 .map {

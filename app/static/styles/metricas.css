@@ -2,50 +2,6 @@ body{
     background-color: #d9d5d2;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-}
-
-#sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #025928;
-    width: 30%;
-}
-
-#sidebar h3 {
-    margin: 30px;
-    color: white;
-    font-weight: 400;
-}
-
-#sidebar div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #d9d5d2;
-    border-radius: 10px;
-    width: 300px;
-    height: 200px;
-}
-
-#selectMetrics {
-    margin: 15px;
-    width: 250px;
-}
-
-#submit-btn {
-    margin: 15px;
-}
-
-#metrics {
-    width: 70%;
-}
-
 .forgraphs {
     margin: 110px;
 }

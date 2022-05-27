@@ -1,5 +1,5 @@
 from geopy.geocoders import Nominatim
-import os # LIB DO PYTHON QUE ADICIONA COMANDOS DO SISTEMA OPERACIONAL, TALVEZ POSSA SER USADO PARA GERAR O ARQUIVO EM OUTRA PASTA (os.path.join...)
+import os
 import folium
 
 def createMap(c):

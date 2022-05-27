@@ -53,20 +53,8 @@
   </nav>
 
   <!--CONTEÚDO DA PÁGINA-->
-  <div class="content">
-    <div id="sidebar">
-      <h3>Métricas</h3>
-      <div>
-        <select name="metrics" id="selectMetrics" >
-          <option value="sector">Vagas abertas / Setor</option>
-          <option value="heatmap">Mapa de calor da vagas / Brasil</option>
-        </select>
-        <button class="btn btn-success" type="submit" id="submit-btn" onclick="getMetrics()">Filtrar</button>
-      </div>
-    </div>
-    <div id="metrics">
-      <object data="{{ url_for('static', filename='pages/heatmap.html') }}" style="width: 100%; height: 100%; display: none;" id="heatmap"></object>
-    </div>
+  <div class="forgraphs">
+    <img src="{{ url_for('static', filename='img/grafico.png') }}" alt="" class="col-12">
   </div>
  
 
