@@ -7,7 +7,7 @@ def createMap(c):
   loc = Nominatim(user_agent="GetLoc")
   getLoc = loc.geocode(city)
 
-  m = folium.Map(location=[getLoc.latitude, getLoc.longitude], zoom_start=15)
+  m = folium.Map(location=[getLoc.latitude, getLoc.longitude], zoom_start=12)
 
   folium.Marker(location=[getLoc.latitude, getLoc.longitude],
                 popup=(f"Vagas em {city}"),
