@@ -2,8 +2,23 @@ from bs4 import BeautifulSoup
 import requests
 
 url_list = [
-    "https://www.bne.com.br/vagas-de-emprego-na-area-de-informatica?Area=Inform%C3%A1tica&Sort=0&Page=1", 
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-comercio?Area=Com%C3%A9rcio&Sort=0&Page=1",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-comercio?Area=Com%C3%A9rcio&Sort=0&Page=2",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-comercio?Area=Com%C3%A9rcio&Sort=0&Page=3",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-administrativo?Area=Administrativo&Sort=0&Page=1",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-administrativo?Area=Administrativo&Sort=0&Page=2",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-administrativo?Area=Administrativo&Sort=0&Page=3",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-logistica?Area=Logística&Sort=0&Page=1", 
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-logistica?Area=Logística&Sort=0&Page=2",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-logistica?Area=Logística&Sort=0&Page=3",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-informatica?Area=Inform%C3%A1tica&Sort=0&Page=1",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-informatica?Area=Inform%C3%A1tica&Sort=0&Page=2",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-informatica?Area=Inform%C3%A1tica&Sort=0&Page=3",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-recursos-humanos?Area=Recursos%20Humanos&Sort=0&Page=1",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-recursos-humanos?Area=Recursos%20Humanos&Sort=0&Page=3",
+    "https://www.bne.com.br/vagas-de-emprego-na-area-de-recursos-humanos?Area=Recursos%20Humanos&Sort=0&Page=2",    
 ]
+
 def get_url_vaga(url_list):
     p_list = []
     urlVagas = []
@@ -136,4 +151,6 @@ def filter_area(url_list, job_opportunity):
             our_area.append('Outros')
     
     return our_area
+
+
 

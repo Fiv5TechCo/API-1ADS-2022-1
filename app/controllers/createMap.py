@@ -14,4 +14,4 @@ def createMap(c):
                 icon=folium.Icon(color='red', icon='info-sign')
                 ).add_to(m)
 
-  m.save(os.path.join('app/static/pages', 'map.html'))
+  m.save(os.path.join('app/static/pages', 'map.html')) 
