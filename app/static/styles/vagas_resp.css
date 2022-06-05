@@ -1,0 +1,10 @@
+@media screen and (max-width: 600px) {
+  .vaga {
+    padding: 20px 0px;
+  }
+
+  .byfilter {
+    flex-direction: column;
+    align-items: center;
+  }
+}

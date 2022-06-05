@@ -1,0 +1,46 @@
+#body {
+    background-color: #d9d5d2;
+}
+
+.reset {
+    text-align: center;
+}
+
+.form_area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.form-group {
+    border-radius: 10px;
+}
+
+.content {
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    color: #038c3e;
+    text-shadow: #707070 1px 1px 2px;
+}
+
+.filter_btn {
+    width: 80px;
+    text-align: center;
+    height: 35px;
+    background-color: #038c3e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.my-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

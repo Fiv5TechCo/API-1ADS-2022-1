@@ -1,22 +1,23 @@
-body {
+#back {
     background-color: #d9d5d2;
 }
+
 .vaga {
-    width: 1000px;
+    max-width: 1000px;
     margin: 30px auto;    
     border-radius: 8px;   
     background-color: #038c3e;
     color: white;
-    
 }
 
 .content_vagas {
-    flex: 1 0 auto;
+    flex: 1 0 auto; 
 }
 
 .myselect {
     width: 240px;
-
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .courses-title {
@@ -29,12 +30,18 @@ body {
     text-shadow: #707070 1px 1px 2px;
 }
 
-.byfilter {
-    margin: 20px 50px;
-    text-align: end;
+.courses-title h1 {
+    text-align: center;
 }
 
-#filter_btn {
+.byfilter {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    gap: 20px;
+}
+
+.filter_btn {
     width: 80px;
     background-color: #038c3e;
     color: white;
@@ -42,8 +49,16 @@ body {
     border-radius: 8px;
 }
 
+.paginate {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #038c3e;
+}
+
 .plusbtn {
-    margin: 20px 50px 200px 320px ;
     background-color: #038c3e;
     border: none;
 }
@@ -54,9 +69,58 @@ body {
     text-align: justify;
 }
 .col {      
-    height: 64px;    
-}
-.texto {
-    margin: 4px;
+    height: 70px;    
 }
 
+#job-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 60px;
+}
+
+#job-description {
+    padding: 0px 56px 20px;
+}
+
+.texto {
+    text-align: justify;
+}
+
+.bold-titles {
+    font-weight: bold;
+}
+
+#job-links {
+    padding-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.redirect-btn {
+    background-color: #038c3e;
+    border: none;
+}
+
+.text-start {
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn {
+    margin: 5px;
+}
+
+#vagaId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+#vagaId button {
+    padding: 0px;
+    margin: 4px 0px 0px 6px;
+    width: 20px;
+}

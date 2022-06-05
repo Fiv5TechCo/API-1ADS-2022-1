@@ -1,17 +1,20 @@
 let jobs;
+let jobsJson;
 let jobsToAdd;
 let cities = []
 let states = []
 let locations = []
 
 async function getJobs() {
-  let data = await fetch("https://raw.githubusercontent.com/Fiv5TechCo/API-1ADS-2022-1/main/app/models/for_Metricas.json")
-  jobs = await data.json()
-  return jobs
+  await fetch(`https://raw.githubusercontent.com/Fiv5TechCo/API-1ADS-2022-1/main/app/models/for_Metricas.json`)
+  .then( response => response.json())
+  .then( json => jobsJson = json)
+  .catch( err => console.log(err))
+  return jobsJson
 }
 
 async function updateJobs() {
-
+  
   jobsToAdd = await getJobs()
 
   const jobs = document.querySelector("div.jobs")
@@ -107,4 +110,4 @@ function updateLocations(jobLocation) {
 
 }
 
-updateJobs()
+document.addEventListener('DOMContentLoaded', updateJobs())
