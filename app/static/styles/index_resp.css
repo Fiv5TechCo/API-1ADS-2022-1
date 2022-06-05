@@ -1,0 +1,18 @@
+@media only screen and (max-width: 769px) {
+  .conteudo {
+    flex-direction: column;
+  }
+
+  .coluna-direita,
+  .coluna-esquerda {
+    width: 100%;
+  }
+
+  .coluna-direita {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #d9d5d2;
+  }
+}

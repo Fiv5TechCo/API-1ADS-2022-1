@@ -16,10 +16,15 @@
     text-shadow: #707070 1px 1px 2px;
 }
 
+#courses-title h1 {
+    text-align: center;
+}
+
 #courses-title p {
     text-align: center;
     color: black;
     text-shadow: none;
+    margin: 0px 20px;
 }
 
 #courses {
