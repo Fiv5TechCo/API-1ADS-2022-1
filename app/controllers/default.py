@@ -24,7 +24,6 @@ def vagas(page):
     if request.method == 'POST' and form_filter.validate_on_submit():
         return redirect(url_for('area_filter_page', choice_filter=choice_filter))    
     job_details = Vagas.query.paginate(page,per_page,error_out=False)
-    #job_details_len = len(job_details)
     if request.method == 'POST':
         try:
             vaga_id = request.form['vagaId']
@@ -50,7 +49,6 @@ def area_filter_page(page, choice_filter):
         per_page = 10
         form_filter = MyFilterForm()
         job_details = Vagas.query.filter_by(area=choice_filter).paginate(page,per_page,error_out=False)
-        #job_details_len = len(job_details)
         if form_filter.validate_on_submit():
             return redirect(url_for('vagas', job_details = job_details, form_filter = form_filter,
         have_filter=have_filter)) 
