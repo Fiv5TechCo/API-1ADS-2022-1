@@ -1,13 +1,13 @@
-body {
+#back {
     background-color: #d9d5d2;
 }
+
 .vaga {
     width: 1000px;
     margin: 30px auto;    
     border-radius: 8px;   
     background-color: #038c3e;
     color: white;
-    
 }
 
 .content_vagas {
@@ -60,3 +60,6 @@ body {
     margin: 4px;
 }
 
+.btn {
+    margin: 5px;
+}

@@ -1,0 +1,25 @@
+#body {
+    background-color: #d9d5d2;
+}
+
+.col-md-5 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.col-md-5 button {
+    margin-top: 20px; 
+}
+
+.container-md {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #038c3e;
+    text-shadow: #707070 1px 1px 2px;
+}
+
+.teste {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
