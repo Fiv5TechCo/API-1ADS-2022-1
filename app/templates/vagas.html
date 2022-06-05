@@ -81,7 +81,7 @@
     </form>
     {% else %}
     <div class="courses-title">
-      <h1>Area escolhida : {{ have_filter }}</h1>
+      <h1>Área escolhida : {{ have_filter }}</h1>
       <form action="" method="POST">
         {{ form_filter.csrf_token }}
         <button type="submit" class="filter_btn">Voltar</button>
