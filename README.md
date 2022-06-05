@@ -15,8 +15,8 @@ Seguem abaixo os requisitos de projeto, elencados pelo cliente:
 
 **Status do projeto:**
 - 1ª Sprint - Concluída 
-- 2ª Sprint - Em andamento
-- 3ª Sprint - Em andamento
+- 2ª Sprint - Concluída
+- 3ª Sprint - Concluída
 
 ## **Análise dos Requisitos**
 
@@ -101,11 +101,12 @@ As três partes do padrão de projeto de software MVC podem ser descritas da seg
 
 ## **1ª Sprint - Entrega das páginas Home e Vagas**
 
-![Gif Home e Vagas](./readme/gif-home-vagas.gif "Gif Home e Vagas")
+<img src='./readme/gif-home-vagas.gif' width='1890'/>
 
 ## **2ª Sprint - Entrega das páginas Cursos e Certificações, Métricas e Localização**
 
 ![Gif Cursos, Métricas e Localização](./readme/cursos-metricas-localização.gif "Gif Cursos, Métricas e Localização")
+
 
 ## **3ª Sprint - Entrega das páginas Login, Cadastro de Vagas e Interface de Administrador**
 
