@@ -66,21 +66,24 @@
     </nav>
 
     <!--CONTEÚDO DA PÁGINA-->
-    <div class="col-md-5 offset-md-3">
+    <div class="content">
+        <div>
         <form action="" method="POST">
             {{ reset_db.csrf_token }}
-            <h3>Resetar raspagem de vagas?</h3>
+            <div class="reset">
+            <h2>Resetar raspagem de vagas?</h2>
             {% if current_user.is_authenticated %}
-            <button type="submit" class="btn btn-success">Resetar</button>
-            {% endif%} 
-        </form>  
-    </div>
-    <div class="container-md">
-        <div class="col-md-6 offset-md-4">
+            <button type="submit" class="filter_btn">Resetar</button>
+            {% endif%}
+            </div> 
+        </form>
+        </div>  
+    
+        <div class="form_area">
             <form action="" method="POST">
                 {{ add_form.csrf_token }}
-                <div class="form-group">
-                    <h3>Informações Para Cadastro</h3><br>
+                <div>
+                    <h2>Informações Para Cadastro</h2><br>
                     <p>Função a Desempenhar: {{ add_form.task(class="form-control", placeholder="Ex: Desenvolvedor") }}</p>
                     <p>Area de Atuação: {{ add_form.area(class="form-select") }}</p>                    
                     <p>Cidade: {{ add_form.city(class="form-control", placeholder="Ex: São José dos Campos") }}</p>
@@ -90,13 +93,12 @@
                     <p>Descrição Geral: {{ add_form.description(class="form-control") }}</p>
                     <p>Requisitos: {{ add_form.assignmen(class="form-control") }}</p>
                 </div>
-                <br>
                 {% if current_user.is_authenticated %}
-                <button type="submit" class="btn btn-success">Cadastrar</button>
+                <button type="submit" class="filter_btn">Cadastrar</button>
                 {% endif%}
             </form>
         </div>        
-    </div>
+    
     {% if cadastrada or have_reset %}
         <div class="alert alert-success">
             {% with messages = get_flashed_messages() %}
@@ -110,7 +112,7 @@
             {% endwith %}
         </div>
         {% endif %}
-
+    </div>
     <!--RODAPÉ-->
     <footer class="bd-footer py-2 my-footer">
         <div class="container py-2">

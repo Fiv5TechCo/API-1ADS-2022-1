@@ -15,8 +15,8 @@ Seguem abaixo os requisitos de projeto, elencados pelo cliente:
 
 **Status do projeto:**
 - 1ª Sprint - Concluída 
-- 2ª Sprint - Em andamento
-- 3ª Sprint - Em andamento
+- 2ª Sprint - Concluída
+- 3ª Sprint - Concluída
 
 ## **Análise dos Requisitos**
 
@@ -40,6 +40,10 @@ Dados os requisitos de projeto, a Fiv5Tech Co. elaborou insights sobre o produto
 # **Burndown Chart - 2ª Sprint**
 
 ![Burndown Chart 2ª Sprint](./readme/burndown-chart-2sprint.png "Burndown Chart 2ª Sprint")
+
+# **Burndown Chart - 3ª Sprint**
+
+![Burndown Chart 2ª Sprint](./readme/burndown-chart-3sprint.png "Burndown Chart 2ª Sprint")
 
 ## **Tecnologias Utilizadas**
 
