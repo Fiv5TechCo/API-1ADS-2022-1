@@ -107,7 +107,7 @@
             </button>
             {% endif %}
             {% if current_user.is_authenticated %}
-            <form action="" method="POST" name="vagaId">
+            <form action="" method="POST" name="vagaId" id='vagaId'>
               <input type="text" value="{{ job_details.id }}" name="vagaId" style="display: none;">
               <button type="submit" class="btn-close btn-close-white" aria-label="Close" id="{{ job_details.id }}"></button>
             </form>
@@ -191,7 +191,7 @@
     </div>
 
     {% endif %}
-
+    </div>
 
     <!--RODAPÉ-->
     <footer class="bd-footer py-2 my-footer">
